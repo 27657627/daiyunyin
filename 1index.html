@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>燃火投流博客</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<script src="assets/js/tailwindcss.js"></script>
+<style>
+html, body { overflow-x: hidden; overscroll-behavior-x: none;}
+body { overscroll-behavior-x:none; }
+img { max-width: 100%;height:auto;}
+* { box-sizing: border-box; }
+@keyframes fadeInUp { 0%{opacity:0;transform:translateY(50px) scale(.94);} 100%{opacity:1;transform:none;} }
+@keyframes fadeInLeft { 0% { opacity:0; transform:translateX(-90px) scale(.96);} 100%{opacity:1; transform:none;} }
+@keyframes fadeInRight { 0% { opacity:0; transform:translateX(90px) scale(.96);} 100%{opacity:1; transform:none;} }
+@keyframes popBounce { 0%{transform:scale(.6);opacity:0;}60%{transform:scale(1.08);}80%{transform:scale(.96);}100%{transform:scale(1);opacity:1;}}
+@keyframes shakeX {15%,45%,75% {transform:translateX(-4px);}30%,60%,90%{transform:translateX(5px);}0%,100%{transform:none;}}
+/* 波纹 */
+.ripple { position: relative; overflow: hidden !important;}
+.ripple:active::after { content:'';position:absolute;left:50%;top:50%;width:0;height:0;
+  background:rgba(255,255,255,0.37); border-radius:999px; transform:translate(-50%,-50%);
+  animation:rippleEffect .47s linear; pointer-events:none; z-index:10;}
+@keyframes rippleEffect { 0%{width:0;height:0;} 90%{width:94px;height:94px;} 100%{width:94px;height:94px;opacity:0;}}
+.animate-fadein-up { animation:fadeInUp .7s cubic-bezier(.5,-0.05,.33,1.1) both; }
+.animate-pop { animation:popBounce .8s cubic-bezier(.53,-0.19,.56,1.18) both;}
+.animate-shake { animation:shakeX .33s linear; }
+.animate-left { animation:fadeInLeft .9s cubic-bezier(.67,-0.14,.43,1.22) both; }
+.animate-right { animation:fadeInRight .9s cubic-bezier(.67,-0.14,.43,1.22) both; }
+</style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-blue-100 via-pink-50 to-yellow-100 flex flex-col">
+<main class="flex-1 flex justify-center">
+  <div class="w-full max-w-2xl mx-auto px-3 pt-16 pb-16 flex flex-col">
+    <div class="mb-14 mt-3 text-center animate-fadein-up">
+      <div class="font-bold text-4xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-pink-500 to-yellow-500 drop-shadow">
+         燃火投流🔥全媒体投流代运营
+      </div>
+
+    <div class="my-10 flex flex-col items-center animate-fadein-up">
+      <div class="mb-6 text-lg md:text-xl font-bold text-orange-600 flex items-center gap-1 tracking-wider ">
+        👑 记得常回家看看
+      </div>
+       <div class="connect"><a href="1index.html" target="_blank">😆   ➡进入首页⬅ </a></div>
+
+      <div class="flex flex-col sm:flex-row gap-7 w-full max-w-2xl justify-center relative select-none">
+        <div class="flex-1 flex items-center justify-center p-4 sm:p-5 bg-gradient-to-tr from-blue-50 via-white to-blue-100 rounded-2xl shadow-md hover:scale-[1.03] hover:shadow-lg active:scale-95 group transition animate-left">
+         <img src="assets/svg/wz.svg" alt="网址" class="w-5 h-5 ml-2 inline-block align-middle" />
+          <span class="font-semibold text-blue-700 ml-2 text-base md:text-lg">网址</span>
+          <span id="qq1"
+            class="inline-flex font-mono text-[1.05rem] md:text-lg font-bold text-blue-900 
+            bg-blue-100/80 px-2 py-[2px] mx-3 rounded-md select-all border border-transparent group-hover:border-blue-400 group-hover:animate-shake transition"
+            style="line-height:1.7;"
+          >燃火.top</span>
+          <button onclick="copyContact('qq1','请使用浏览器打开搜索   ')"
+            class="relative px-2 py-0.5 md:px-2.5 md:py-1 rounded ripple bg-blue-500/90 hover:bg-pink-400 hover:text-yellow-50 text-white font-bold text-[0.94rem] md:text-base shadow-sm transition hover:scale-105 outline-none border border-white/50 align-middle"
+            style="height:auto;min-width:43px;line-height:1.7;vertical-align:middle;display:inline-flex;align-items:center;justify-content:center"
+          >复制</button>
+        </div>
+        <div class="flex-1 flex items-center justify-center p-4 sm:p-5 bg-gradient-to-tr from-yellow-50 via-white to-pink-100 rounded-2xl shadow-md hover:scale-[1.03] hover:shadow-lg active:scale-95 group transition animate-right delay-100">
+          <img src="assets/svg/weixin.svg" alt="dd" class="w-5 h-5 ml-2 inline-block align-middle" />
+          <span class="font-semibold text-yellow-700 ml-2 text-base md:text-lg">微信</span>
+          <span id="dd1"
+            class="inline-flex font-mono text-[1.05rem] md:text-lg font-bold text-yellow-900
+            bg-yellow-100/80 px-2 py-[2px] mx-3 rounded-md select-all border border-transparent group-hover:border-yellow-300 group-hover:animate-shake transition"
+            style="line-height:1.7;"
+          >dy77372</span>
+          <button onclick="copyContact('dd1','微信号')"
+            class="relative px-2 py-0.5 md:px-2.5 md:py-1 rounded ripple bg-yellow-400/90 hover:bg-pink-400 hover:text-blue-900 text-white font-bold text-[0.94rem] md:text-base shadow-sm transition hover:scale-105 outline-none border border-white/50 align-middle"
+            style="height:auto;min-width:43px;line-height:1.7;vertical-align:middle;display:inline-flex;align-items:center;justify-content:center"
+          >复制</button>
+        </div>
+      </div>
+        </div>
+        <div class="flex-1 flex items-center justify-center p-4 sm:p-5 bg-gradient-to-tr from-yellow-50 via-white to-pink-100 rounded-2xl shadow-md hover:scale-[1.03] hover:shadow-lg active:scale-95 group transition animate-right delay-100">
+          <img src="assets/svg/weixin.svg" alt="dd" class="w-5 h-5 ml-2 inline-block align-middle" />
+          <span class="font-semibold text-yellow-700 ml-2 text-base md:text-lg">微信1️⃣</span>
+          <span id="dd1"
+            class="inline-flex font-mono text-[1.05rem] md:text-lg font-bold text-yellow-900
+            bg-yellow-100/80 px-2 py-[2px] mx-3 rounded-md select-all border border-transparent group-hover:border-yellow-300 group-hover:animate-shake transition"
+            style="line-height:1.7;"
+          >dy77372</span>
+       </div>
+        <div class="flex-1 flex items-center justify-center p-4 sm:p-5 bg-gradient-to-tr from-yellow-50 via-white to-pink-100 rounded-2xl shadow-md hover:scale-[1.03] hover:shadow-lg active:scale-95 group transition animate-right delay-100">
+          <img src="assets/svg/weixin.svg" alt="dd" class="w-5 h-5 ml-2 inline-block align-middle" />
+          <span class="font-semibold text-yellow-700 ml-2 text-base md:text-lg">微信2️⃣</span>
+          <span id="dd1"
+            class="inline-flex font-mono text-[1.05rem] md:text-lg font-bold text-yellow-900
+            bg-yellow-100/80 px-2 py-[2px] mx-3 rounded-md select-all border border-transparent group-hover:border-yellow-300 group-hover:animate-shake transition"
+            style="line-height:1.7;"
+          >lv22801</span>
+    </div>
+        <div class="flex-1 flex items-center justify-center p-4 sm:p-5 bg-gradient-to-tr from-yellow-50 via-white to-pink-100 rounded-2xl shadow-md hover:scale-[1.03] hover:shadow-lg active:scale-95 group transition animate-right delay-100">
+          <img src="assets/svg/weixin.svg" alt="dd" class="w-5 h-5 ml-2 inline-block align-middle" />
+          <span class="font-semibold text-yellow-700 ml-2 text-base md:text-lg">微信3️⃣</span>
+          <span id="dd1"
+            class="inline-flex font-mono text-[1.05rem] md:text-lg font-bold text-yellow-900
+            bg-yellow-100/80 px-2 py-[2px] mx-3 rounded-md select-all border border-transparent group-hover:border-yellow-300 group-hover:animate-shake transition"
+            style="line-height:1.7;"
+          >dy77372</span>
+    </div>
+<!-- 在页面任意位置添加这个显示容器 -->
+<div id="uptime-display">网站已运行：计算中...</div>
+ 
+<script>
+// 设置网站的启动日期（请修改为你的网站实际上线时间）
+const startDate = new Date('2020-01-01T00:00:00');
+ 
+function calculateUptime() {
+    const now = new Date();
+    let years = now.getFullYear()  - startDate.getFullYear(); 
+    let months = now.getMonth()  - startDate.getMonth(); 
+    let days = now.getDate()  - startDate.getDate(); 
+    let hours = now.getHours()  - startDate.getHours(); 
+    let minutes = now.getMinutes()  - startDate.getMinutes(); 
+    let seconds = now.getSeconds()  - startDate.getSeconds(); 
+    
+    
+    // 处理负值（时间借位）
+    if (seconds < 0) {
+        seconds += 60;
+        minutes--;
+    }
+    if (minutes < 0) {
+        minutes += 60;
+        hours--;
+    }
+    if (hours < 0) {
+        hours += 24;
+        days--;
+    }
+    if (days < 0) {
+        // 获取上个月的天数
+        const prevMonth = new Date(now.getFullYear(),  now.getMonth(),  0);
+        days += prevMonth.getDate(); 
+        months--;
+    }
+    if (months < 0) {
+        months += 12;
+        years--;
+    }
+    
+    return { years, months, days, hours, minutes, seconds };
+}
+ 
+function updateUptimeDisplay() {
+    const uptime = calculateUptime();
+    document.getElementById('uptime-display').innerHTML  = 
+        `网站已运行：${uptime.years} 年 ${uptime.months} 个月 ${uptime.days} 天<br>
+        ${uptime.hours} 小时 ${uptime.minutes} 分钟 ${uptime.seconds} 秒`;
+}
+ 
+// 初始更新
+updateUptimeDisplay();
+ 
+// 每秒更新一次
+setInterval(updateUptimeDisplay, 1000);
+</script>
+
+       <div class="connect"><a href="2index.html" target="_blank">😀  ➡关于我们⬅</a></div>
+  </div>
+
+</main>
+<div id="tipsToast"
+  class="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 px-8 py-4 rounded-2xl bg-blue-600/95 font-extrabold text-white text-lg shadow-lg pointer-events-none opacity-0 transition duration-300"
+></div>
+<script>
+function copyContact(id, type){
+  let el=document.getElementById(id),val=el?el.innerText.trim():'';
+  el?.classList.remove('animate-shake'); void el?.offsetWidth; el?.classList.add('animate-shake');
+  if(val){
+    if(window.navigator.clipboard){
+      window.navigator.clipboard.writeText(val)
+          .then(()=>showToast(type+'已复制: '+val));
+    }else{
+      let ta=document.createElement('textarea');
+      ta.value=val;document.body.appendChild(ta);ta.select();
+      try{document.execCommand('copy');showToast(type+'已复制: '+val);}catch(e){}
+      document.body.removeChild(ta);
+    }
+  }
+}
+function showToast(msg){
+  let t=document.getElementById("tipsToast");
+  if(!t) return;
+  t.innerText=msg;
+  t.classList.remove("opacity-0","pointer-events-none");
+  t.classList.add("opacity-100");
+  setTimeout(()=>{ t.classList.remove("opacity-100");t.classList.add("opacity-0","pointer-events-none");},1400)
+}
+</script>
+<script charset="UTF-8" id="LA_COLLECT" src="https://sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"KlqcaNFguU8VJuCM",ck:"KlqcaNFguU8VJuCM"})</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>樱花飘落效果</title>
+    <style>
+        /* 花瓣基础样式 */
+        .petal {
+            position: fixed;
+            pointer-events: none;
+            background-size: contain;
+            background-repeat: no-repeat;
+            z-index: 9999;
+            opacity: 0.7;
+        }
+        
+        /* 不同类型的樱花样式 */
+        .petal-type1 {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path fill="%23ffb7c5" d="M12,2C9,7,4,9,4,14c0,5,6,8,8,8s8-3,8-8C20,9,15,7,12,2z"/></svg>');
+        }
+        
+        .petal-type2 {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path fill="%23ff9eb5" d="M12,3C8,8,3,10,3,15c0,4,5,7,9,7s9-3,9-7C21,10,16,8,12,3z"/></svg>');
+        }
+    </style>
+</head>
+<body>
+    <!-- 你的网站内容放在这里 -->
+    <script>
+        // ====== 樱花生成核心代码 ======
+        document.addEventListener('DOMContentLoaded',  () => {
+            const petalContainer = document.createElement('div'); 
+            document.body.appendChild(petalContainer); 
+            
+            // 创建花瓣 
+            function createPetal() {
+                const petal = document.createElement('div'); 
+                petal.className  = `petal petal-type${Math.floor(Math.random()  * 2) + 1}`;
+                
+                // 随机属性设置 
+                const size = 15 + Math.random()  * 25;
+                petal.style.width  = `${size}px`;
+                petal.style.height  = `${size}px`;
+                petal.style.left  = `${Math.random()  * window.innerWidth}px`; 
+                petal.style.top  = `-${size}px`;
+                petal.style.opacity  = 0.3 + Math.random()  * 0.7;
+                petal.style.transform  = `rotate(${Math.random()  * 360}deg)`;
+                
+                // 动画参数
+                const duration = 10 + Math.random()  * 20;
+                const sway = 50 + Math.random()  * 100;
+                const swayDirection = Math.random()  > 0.5 ? 1 : -1;
+                
+                // 应用动画 
+                petal.animate([ 
+                    { 
+                        transform: `translate(0, 0) rotate(0deg)`,
+                        opacity: petal.style.opacity 
+                    },
+                    { 
+                        transform: `translate(${sway * swayDirection}px, ${window.innerHeight}px)  rotate(360deg)`,
+                        opacity: 0 
+                    }
+                ], {
+                    duration: duration * 1000,
+                    easing: 'cubic-bezier(0.4, 0, 0.2, 1)'
+                });
+                
+                petalContainer.appendChild(petal); 
+                
+                // 动画结束后移除元素 
+                setTimeout(() => petal.remove(),  duration * 1000);
+            }
+            
+            // 控制花瓣生成频率（每秒2-5片）
+            setInterval(createPetal, 300);
+        });
+    </script>
+</body>
+</html>

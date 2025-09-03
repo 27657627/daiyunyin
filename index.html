@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全媒体代运营-专业各大短视频平台营销服务</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind 配置 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FE2C55', // 抖音红
+                        secondary: '#161823', // 深色背景
+                        dark: '#0F1017', // 更深色背景
+                        light: '#F5F5F7', // 浅色文本
+                        gray: {
+                            700: '#4A4A4A',
+                            800: '#2C2C2E',
+                            900: '#1C1C1E'
+                        }
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .text-gradient {
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .bg-blur {
+                backdrop-filter: blur(8px);
+            }
+            .scrollbar-hide::-webkit-scrollbar {
+                display: none;
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-8px);
+            }
+        }
+    </style>
+</head>
+
+<body class="font-inter bg-secondary text-light antialiased overflow-x-hidden">
+    <!-- 导航栏 -->
+    <header id="navbar" class="fixed w-full z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2">
+                <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
+                    <i class="fa fa-play-circle text-white text-xl"></i>
+                </div>
+                <span class="text-2xl font-bold text-white">燃火投流-全媒体短视频-电商平台代运营服务</span>
+            </a>
+            
+            <!-- 桌面导航 -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#" class="text-gray-300 hover:text-primary transition-colors">首页</a>
+                <a href="dy.index.html" class="text-gray-300 hover:text-primary transition-colors">抖音投流</a>
+                <a href="sph.index.html" class="text-gray-300 hover:text-primary transition-colors">视频号投流</a>
+                <a href="ks.index.html" class="text-gray-300 hover:text-primary transition-colors">快手投流</a>
+                <a href="xhs.index.html" class="text-gray-300 hover:text-primary transition-colors">小红书投流</a>
+                <a href="wb.index.html" class="text-gray-300 hover:text-primary transition-colors">微博投流</a>
+                <a href="2index.html" class="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-full transition-all hover:shadow-lg hover:shadow-primary/20">关于我们</a>
+            </nav>
+            
+            <!-- 移动端菜单按钮 -->
+            <button id="menu-toggle" class="md:hidden text-white text-2xl">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- 移动端导航菜单 -->
+        <div id="mobile-menu" class="md:hidden bg-dark/95 bg-blur hidden">
+            <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
+                <a href="#" class="text-gray-300 hover:text-primary py-2 transition-colors">首页</a>
+                <a href="dy.index.html" class="text-gray-300 hover:text-primary py-2 transition-colors">抖音投流</a>
+                <a href="sph.index.html" class="text-gray-300 hover:text-primary py-2 transition-colors">视频号投流</a>
+                <a href="ks.index.html" class="text-gray-300 hover:text-primary py-2 transition-colors">快手投流</a>
+                <a href="xhs.index.html" class="text-gray-300 hover:text-primary py-2 transition-colors">小红书投流</a>
+                <a href="wb.index.html" class="text-gray-300 hover:text-primary py-2 transition-colors">微博投流</a>
+                <a href="2index.html" class="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-full text-center transition-all">关于我们</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 英雄区域 -->
+    <section class="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-dark/80 to-secondary/90 z-10"></div>
+            <img src="https://picsum.photos/id/1/1920/1080" alt="抖音短视频背景" class="w-full h-full object-cover">
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-20">
+            <div class="max-w-3xl">
+                <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-extrabold leading-tight mb-6">
+                    专业抖音短视频平台<span class="text-primary">代运营</span><br>
+                    让您的品牌火遍全网
+                </h1>
+                <p class="text-[clamp(1rem,2vw,1.25rem)] text-gray-300 mb-8 max-w-2xl">
+                    我们还提供一站式抖音代运营服务，从内容策划到视频制作，从账号管理到流量变现，
+                    让您的品牌在短视频时代脱颖而出。
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="dy.index.html" class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all hover:shadow-lg hover:shadow-primary/30 text-center">
+                        查看套餐
+                    </a>
+                    <a href="index.html" class="bg-transparent border-2 border-white/30 hover:border-white/60 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all text-center">
+                        联系客服
+                    </a>
+                </div>
+                
+                <!-- 运营时间 -->
+                <div class="mt-16 bg-dark/60 bg-blur rounded-xl p-6 inline-block">
+                    <div class="flex items-center space-x-3 mb-3">
+                        <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
+                            <i class="fa fa-clock-o text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">运营时间</h3>
+                    </div>
+                    <p class="text-gray-300">周一至周五: 9:00 - 22:00</p>
+                    <p class="text-gray-300">周六至周日: 10:00 - 23:00</p>
+                    <p class="text-gray-400 text-sm mt-2">节假日正常运营，24小时在线客服</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 装饰元素 -->
+        <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-secondary to-transparent"></div>
+        <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+    </section>
+
+    <!-- 数据统计 -->
+    <section class="py-16 bg-secondary relative">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold text-primary mb-2 counter" data-target="500">0</div>
+                    <p class="text-gray-400">合作客户</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold text-primary mb-2 counter" data-target="37000000">0</div>
+                    <p class="text-gray-400">累计播放</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold text-primary mb-2 counter" data-target="1500">0</div>
+                    <p class="text-gray-400">成功案例</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold text-primary mb-2 counter" data-target="98">0</div>
+                    <p class="text-gray-400">客户满意度(%)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务项目 -->
+    <section id="services" class="py-20 bg-gradient-to-b from-secondary to-dark">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold mb-4">我们的短视频平台代运营服务</h2>
+                <p class="text-gray-400 text-lg">提供全方位的抖音运营解决方案，助力品牌快速增长</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 服务卡片1 -->
+                <div class="bg-gray-900/50 rounded-2xl p-8 card-hover border border-gray-800">
+                    <div class="w-14 h-14 rounded-xl bg-primary/20 flex items-center justify-center mb-6">
+                        <i class="fa fa-lightbulb-o text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">内容策划</h3>
+                    <p class="text-gray-400 mb-6">根据品牌定位和目标受众，制定个性化内容策略，包括选题规划、脚本创作和热点追踪。</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                            <span class="text-gray-300">品牌故事挖掘</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                            <span class="text-gray-300">创意脚本撰写</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                            <span class="text-gray-300">内容发布规划</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- 服务卡片2 -->
+                <div class="bg-gray-900/50 rounded-2xl p-8 card-hover border border-gray-800">
+                    <div class="w-14 h-14 rounded-xl bg-primary/20 flex items-center justify-center mb-6">
+                        <i class="fa fa-video-camera text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">视频制作</h3>
+                    <p class="text-gray-400 mb-6">专业团队负责视频拍摄与剪辑，确保视频质量符合抖音平台特性，提升用户观看体验。</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                            <span class="text-gray-300">专业拍摄剪辑</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                            <span class="text-gray-300">特效包装</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                            <span class="text-gray-300">字幕配音</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- 服务卡片3 -->
+                <div class="bg-gray-900/50 rounded-2xl p-8 card-hover border border-gray-800">
+                    <div class="w-14 h-14 rounded-xl bg-primary/20 flex items-center justify-center mb-6">
+                        <i class="fa fa-line-chart text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">账号运营</h3>
+                    <p class="text-gray-400 mb-6">全程负责账号日常管理，包括内容发布、粉丝互动、评论回复和数据分析优化。</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                            <span class="text-gray-300">日常维护更新</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                            <span class="text-gray-300">粉丝互动管理</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                            <span class="text-gray-300">数据监控分析</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- 服务卡片4 -->
+                <div class="bg-gray-900/50 rounded-2xl p-8 card-hover border border-gray-800">
+                    <div class="w-14 h-14 rounded-xl bg-primary/20 flex items-center justify-center mb-6">
+                        <i class="fa fa-bullhorn text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">推广引流</h3>
+                    <p class="text-gray-400 mb-6">通过抖音推广工具和运营技巧，提升视频曝光量和账号粉丝增长，实现精准引流。</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                            <span class="text-gray-300">DOU+投放</span>
+                        </li>
+                            <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                            <span class="text-gray-300">巨量千川投放</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                            <span class="text-gray-300">热门话题参与</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                            <span class="text-gray-300">矩阵账号联动</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- 服务卡片5 -->
+                <div class="bg-gray-900/50 rounded-2xl p-8 card-hover border border-gray-800">
+                    <div class="w-14 h-14 rounded-xl bg-primary/20 flex items-center justify-center mb-6">
+                        <i class="fa fa-shopping-cart text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">电商变现</h3>
+                    <p class="text-gray-400 mb-6">搭建抖音电商体系，包括商品橱窗开通、直播带货策划和销售转化优化。</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                            <span class="text-gray-300">小店运营</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                            <span class="text-gray-300">直播带货</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                            <span class="text-gray-300">销售转化优化</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- 服务卡片6 -->
+                <div class="bg-gray-900/50 rounded-2xl p-8 card-hover border border-gray-800">
+                    <div class="w-14 h-14 rounded-xl bg-primary/20 flex items-center justify-center mb-6">
+                        <i class="fa fa-bar-chart text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">数据分析</h3>
+                    <p class="text-gray-400 mb-6">定期提供数据分析报告，跟踪账号表现，优化运营策略，提升运营效果。</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                            <span class="text-gray-300">数据监测报告</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                            <span class="text-gray-300">竞品分析</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                            <span class="text-gray-300">策略优化建议</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 工作流程 -->
+    <section class="py-20 bg-dark relative">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-purple-500 to-primary"></div>
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold mb-4">我们的运营流程</h2>
+                <p class="text-gray-400 text-lg">标准化的服务流程，确保每一个项目都能高效执行</p>
+            </div>
+            
+            <div class="relative">
+                <!-- 连接线 -->
+                <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-gray-800 transform -translate-x-1/2"></div>
+                
+                <div class="space-y-12 relative">
+                    <!-- 步骤1 -->
+                    <div class="md:flex items-center">
+                        <div class="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+                            <h3 class="text-xl font-bold mb-2">需求沟通</h3>
+                            <p class="text-gray-400">深入了解品牌定位、目标受众和营销需求，制定初步运营方案。</p>
+                        </div>
+                        
+                        <div class="hidden md:block absolute left-1/2 w-10 h-10 rounded-full bg-primary transform -translate-x-1/2 flex items-center justify-center font-bold z-10">1</div>
+                        
+                        <div class="md:w-1/2 md:pl-12 md:text-left">
+                            <div class="md:hidden w-8 h-8 rounded-full bg-primary flex items-center justify-center font-bold mb-4">1</div>
+                        </div>
+                    </div>
+                    
+                    <!-- 步骤2 -->
+                    <div class="md:flex items-center">
+                        <div class="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0 order-1 md:order-1">
+                        </div>
+                        
+                        <div class="hidden md:block absolute left-1/2 w-10 h-10 rounded-full bg-primary transform -translate-x-1/2 flex items-center justify-center font-bold z-10">2</div>
+                        
+                        <div class="md:w-1/2 md:pl-12 md:text-left order-0 md:order-2">
+                            <div class="md:hidden w-8 h-8 rounded-full bg-primary flex items-center justify-center font-bold mb-4">2</div>
+                            <h3 class="text-xl font-bold mb-2">方案制定</h3>
+                            <p class="text-gray-400">根据需求分析，制定详细的抖音运营方案，包括内容规划、推广策略和预期效果。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 步骤3 -->
+                    <div class="md:flex items-center">
+                        <div class="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+                            <h3 class="text-xl font-bold mb-2">内容创作</h3>
+                            <p class="text-gray-400">专业团队进行创意策划、脚本撰写、视频拍摄和后期制作，确保内容质量。</p>
+                        </div>
+                        
+                        <div class="hidden md:block absolute left-1/2 w-10 h-10 rounded-full bg-primary transform -translate-x-1/2 flex items-center justify-center font-bold z-10">3</div>
+                        
+                        <div class="md:w-1/2 md:pl-12 md:text-left">
+                            <div class="md:hidden w-8 h-8 rounded-full bg-primary flex items-center justify-center font-bold mb-4">3</div>
+                        </div>
+                    </div>
+                    
+                    <!-- 步骤4 -->
+                    <div class="md:flex items-center">
+                        <div class="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0 order-1 md:order-1">
+                        </div>
+                        
+                        <div class="hidden md:block absolute left-1/2 w-10 h-10 rounded-full bg-primary transform -translate-x-1/2 flex items-center justify-center font-bold z-10">4</div>
+                        
+                        <div class="md:w-1/2 md:pl-12 md:text-left order-0 md:order-2">
+                            <div class="md:hidden w-8 h-8 rounded-full bg-primary flex items-center justify-center font-bold mb-4">4</div>
+                            <h3 class="text-xl font-bold mb-2">账号运营</h3>
+                            <p class="text-gray-400">负责内容发布、粉丝互动、评论管理和数据监控，及时调整运营策略。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 步骤5 -->
+                    <div class="md:flex items-center">
+                        <div class="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+                            <h3 class="text-xl font-bold mb-2">数据分析</h3>
+                            <p class="text-gray-400">定期生成数据分析报告，评估运营效果，提出优化建议，持续提升账号表现。</p>
+                        </div>
+                        
+                        <div class="hidden md:block absolute left-1/2 w-10 h-10 rounded-full bg-primary transform -translate-x-1/2 flex items-center justify-center font-bold z-10">5</div>
+                        
+                        <div class="md:w-1/2 md:pl-12 md:text-left">
+                            <div class="md:hidden w-8 h-8 rounded-full bg-primary flex items-center justify-center font-bold mb-4">5</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 成功案例 -->
+    <section id="cases" class="py-20 bg-gradient-to-b from-dark to-secondary">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold mb-4">成功案例展示</h2>
+                <p class="text-gray-400 text-lg">我们帮助众多品牌在抖音平台实现快速增长</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 案例1 -->
+                <div class="rounded-2xl overflow-hidden group card-hover">
+                    <div class="relative overflow-hidden">
+                        <img src="https://picsum.photos/id/20/600/400" alt="美妆品牌抖音运营案例" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                            <div class="p-6">
+                                <span class="bg-primary/90 text-white text-sm px-3 py-1 rounded-full">自媒体账号</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-gray-900/70">
+                        <h3 class="text-xl font-bold mb-2">自媒体账号</h3>
+                        <p class="text-gray-400 mb-4">3个月粉丝增长50万+，视频平均播放量提升至200万+</p>
+                        <div class="flex items-center space-x-4">
+                            <div class="flex items-center">
+                                <i class="fa fa-user text-primary mr-2"></i>
+                                <span class="text-gray-300">50万+</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-eye text-primary mr-2"></i>
+                                <span class="text-gray-300">200万+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 案例2 -->
+                <div class="rounded-2xl overflow-hidden group card-hover">
+                    <div class="relative overflow-hidden">
+                        <img src="https://picsum.photos/id/26/600/400" alt="餐饮品牌抖音运营案例" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                            <div class="p-6">
+                                <span class="bg-primary/90 text-white text-sm px-3 py-1 rounded-full">装饰品品牌</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-gray-900/70">
+                        <h3 class="text-xl font-bold mb-2">装饰品品牌</h3>
+                        <p class="text-gray-400 mb-4">门店客流量提升30%，线上团购订单月增长2000+，复购率提升25%门店客流量提升30%</p>
+                        <div class="flex items-center space-x-4">
+                            <div class="flex items-center">
+                                <i class="fa fa-user text-primary mr-2"></i>
+                                <span class="text-gray-300">35万+</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-shopping-bag text-primary mr-2"></i>
+                                <span class="text-gray-300">2000+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 案例3 -->
+                <div class="rounded-2xl overflow-hidden group card-hover">
+                    <div class="relative overflow-hidden">
+                        <img src="https://picsum.photos/id/96/600/400" alt="服装品牌抖音运营案例" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                            <div class="p-6">
+                                <span class="bg-primary/90 text-white text-sm px-3 py-1 rounded-full">游戏直播达人</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-gray-900/70">
+                        <h3 class="text-xl font-bold mb-2">游戏推广达人</h3>
+                        <p class="text-gray-400 mb-4">直播场观流量提升30%，直播浏览增长200000+，直播间停留提升25%</p>
+                        <div class="flex items-center space-x-4">
+                            <div class="flex items-center">
+                                <i class="fa fa-user text-primary mr-2"></i>
+                                <span class="text-gray-300">20万+</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-rmb text-primary mr-2"></i>
+                                <span class="text-gray-300">500万+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contact" class="inline-block bg-transparent border-2 border-primary hover:bg-primary text-primary hover:text-white px-8 py-3 rounded-full text-lg font-semibold transition-all">
+                    查看更多案例
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 数据图表 -->
+    <section class="py-20 bg-secondary relative">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold mb-4">我们的运营效果</h2>
+                <p class="text-gray-400 text-lg">数据说话，见证品牌在抖音的成长轨迹</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <!-- 粉丝增长图表 -->
+                <div class="bg-gray-900/50 rounded-2xl p-6 border border-gray-800">
+                    <h3 class="text-xl font-bold mb-6">客户粉丝增长趋势</h3>
+                    <div class="h-80">
+                        <canvas id="followersChart"></canvas>
+                    </div>
+                </div>
+                
+                <!-- 互动数据图表 -->
+                <div class="bg-gray-900/50 rounded-2xl p-6 border border-gray-800">
+                    <h3 class="text-xl font-bold mb-6">内容互动数据对比</h3>
+                    <div class="h-80">
+                        <canvas id="engagementChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 客户评价 -->
+    <section id="testimonials" class="py-20 bg-gradient-to-b from-secondary to-dark">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold mb-4">客户对我们的评价</h2>
+                <p class="text-gray-400 text-lg">听听他们怎么说</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 评价1 -->
+                <div class="bg-gray-900/50 rounded-2xl p-8 card-hover border border-gray-800">
+                    <div class="flex items-center mb-6">
+                        <img src="https://picsum.photos/id/64/100/100" alt="客户头像" class="w-14 h-14 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold">张经理</h4>
+                            <p class="text-gray-400 text-sm">美妆品牌创始人</p>
+                        </div>
+                    </div>
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p class="text-gray-300">"合作半年，我们的抖音账号粉丝从几万增长到了50多万，视频播放量有了质的飞跃，产品销量也提升了30%以上。团队专业负责，值得信赖！"</p>
+                </div>
+                
+                <!-- 评价2 -->
+                <div class="bg-gray-900/50 rounded-2xl p-8 card-hover border border-gray-800">
+                    <div class="flex items-center mb-6">
+                        <img src="https://picsum.photos/id/91/100/100" alt="客户头像" class="w-14 h-14 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold">李总</h4>
+                            <p class="text-gray-400 text-sm">餐饮连锁品牌CEO</p>
+                        </div>
+                    </div>
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p class="text-gray-300">"之前自己运营抖音效果一直不理想，交给专业团队后，门店客流量明显增加，线上团购订单也多了很多。他们的内容很有创意，非常符合我们品牌定位。"</p>
+                </div>
+                
+                <!-- 评价3 -->
+                <div class="bg-gray-900/50 rounded-2xl p-8 card-hover border border-gray-800">
+                    <div class="flex items-center mb-6">
+                        <img src="https://picsum.photos/id/25/100/100" alt="客户头像" class="w-14 h-14 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold">王女士</h4>
+                            <p class="text-gray-400 text-sm">服装品牌负责人</p>
+                        </div>
+                    </div>
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p class="text-gray-300">"选择了他们的全案代运营服务，从内容创作到直播带货都做得非常出色，抖音小店的销售额每个月都在增长，已经成为我们重要的销售渠道。"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 价格套餐 -->
+    <section id="pricing" class="py-20 bg-dark relative">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-purple-500 to-primary"></div>
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold mb-4">我们的服务套餐</h2>
+                <p class="text-gray-400 text-lg">根据您的需求选择合适的套餐，也可定制专属方案</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 基础套餐 -->
+                <div class="bg-gray-900/50 rounded-2xl overflow-hidden card-hover border border-gray-800">
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-2">基础套餐</h3>
+                        <p class="text-gray-400 mb-6">适合初创品牌和个人账号</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold">¥3,980</span>
+                            <span class="text-gray-400">/月</span>
+                        </div>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-3"></i>
+                                <span class="text-gray-300">每月8条短视频制作</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-3"></i>
+                                <span class="text-gray-300">账号日常运营维护</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-3"></i>
+                                <span class="text-gray-300">基础数据分析报告</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-3"></i>
+                                <span class="text-gray-300">粉丝互动管理</span>
+                            </li>
+                            <li class="flex items-start text-gray-500">
+                                <i class="fa fa-times mt-1 mr-3"></i>
+                                <span>直播策划与执行</span>
+                            </li>
+                            <li class="flex items-start text-gray-500">
+                                <i class="fa fa-times mt-1 mr-3"></i>
+                                <span>付费推广代运营</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="block text-center bg-transparent border-2 border-primary hover:bg-primary text-primary hover:text-white px-6 py-3 rounded-full font-semibold transition-all">
+                            选择套餐
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 进阶套餐 -->
+                <div class="bg-gradient-to-b from-primary/20 to-gray-900/50 rounded-2xl overflow-hidden card-hover border border-primary/30 transform md:-translate-y-4 shadow-lg shadow-primary/10">
+                    <div class="bg-primary text-white text-center py-2 text-sm font-medium">
+                        最受欢迎
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-2">进阶套餐</h3>
+                        <p class="text-gray-400 mb-6">适合成长型企业品牌</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold">¥8,800</span>
+                            <span class="text-gray-400">/月</span>
+                        </div>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-3"></i>
+                                <span class="text-gray-300">每月15条短视频制作</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-3"></i>
+                                <span class="text-gray-300">专业账号运营管理</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-3"></i>
+                                <span class="text-gray-300">深度数据分析与优化</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-3"></i>
+                                <span class="text-gray-300">粉丝互动与社群运营</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-3"></i>
+                                <span class="text-gray-300">每月4场直播付费推广</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-3"></i>
+                                <span class="text-gray-300">付费推广代运营</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="block text-center bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-full font-semibold transition-all hover:shadow-lg hover:shadow-primary/20">
+                            选择套餐
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 企业套餐 -->
+                <div class="bg-gray-900/50 rounded-2xl overflow-hidden card-hover border border-gray-800">
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-2">企业套餐</h3>
+                        <p class="text-gray-400 mb-6">适合成熟企业和品牌方</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold">¥16,800</span>
+                            <span class="text-gray-400">/月</span>
+                        </div>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-3"></i>
+                                <span class="text-gray-300">每月30条短视频制作</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-3"></i>
+                                <span class="text-gray-300">专属运营团队服务</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-3"></i>
+                                <span class="text-gray-300">全维度数据分析优化</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-3"></i>
+                                <span class="text-gray-300">粉丝精细化运营管理</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-3"></i>
+                                <span class="text-gray-300">每月8场直播付费推广</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-3"></i>
+                                <span class="text-gray-300">付费推广代运营</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="block text-center bg-transparent border-2 border-primary hover:bg-primary text-primary hover:text-white px-6 py-3 rounded-full font-semibold transition-all">
+                            选择套餐
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-gray-400 mb-4">需要定制化服务方案？</p>
+                <a href="#contact" class="inline-block bg-transparent border border-gray-700 hover:border-primary text-gray-300 hover:text-primary px-8 py-3 rounded-full text-lg font-semibold transition-all">
+                    联系我们定制
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="py-20 bg-gradient-to-b from-dark to-secondary">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold mb-4">联系我们</h2>
+                <p class="text-gray-400 text-lg">填写表单或通过以下方式联系，我们将尽快回复您</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <div class="bg-gray-900/50 rounded-2xl p-8 border border-gray-800 h-full">
+                        <h3 class="text-2xl font-bold mb-6">发送咨询</h3>
+                        <form>
+                            <div class="mb-6">
+                                <label for="name" class="block text-gray-300 mb-2">您的姓名</label>
+                                <input type="text" id="name" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" placeholder="请输入您的姓名">
+                            </div>
+                            <div class="mb-6">
+                                <label for="phone" class="block text-gray-300 mb-2">联系电话</label>
+                                <input type="tel" id="phone" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" placeholder="请输入您的联系电话">
+                            </div>
+                            <div class="mb-6">
+                                <label for="company" class="block text-gray-300 mb-2">公司名称</label>
+                                <input type="text" id="company" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" placeholder="请输入您的公司名称">
+                            </div>
+                            <div class="mb-6">
+                                <label for="service" class="block text-gray-300 mb-2">意向服务</label>
+                                <select id="service" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors">
+                                    <option value="">请选择意向服务</option>
+                                    <option value="basic">基础套餐</option>
+                                    <option value="advanced">进阶套餐</option>
+                                    <option value="enterprise">企业套餐</option>
+                                    <option value="custom">定制服务</option>
+                                </select>
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-300 mb-2">留言内容</label>
+                                <textarea id="message" rows="4" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" placeholder="请输入您的需求描述"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-semibold transition-all hover:shadow-lg hover:shadow-primary/20">
+                                提交咨询
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="bg-gray-900/50 rounded-2xl p-8 border border-gray-800 mb-8">
+                        <h3 class="text-2xl font-bold mb-6">联系方式</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mr-4 mt-1">
+                                    <i class="fa fa-phone text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">电话咨询</h4>
+                                    <p class="text-gray-400">400-123-4567</p>
+                                    <p class="text-gray-500 text-sm">工作日 9:00-21:00</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mr-4 mt-1">
+                                    <i class="fa fa-envelope text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">邮箱联系</h4>
+                                    <p class="text-gray-400">servic@douyin运营.com</p>
+                                    <p class="text-gray-500 text-sm">24小时内回复</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mr-4 mt-1">
+                                    <i class="fa fa-weixin text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">微信咨询</h4>
+                                    <p class="text-gray-400">dy77372</p>
+                                    <p class="text-gray-500 text-sm">添加客服微信</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mr-4 mt-1">
+                                    <i class="fa fa-map-marker text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">公司地址</h4>
+                                    <p class="text-gray-400">深圳市龙华区龙华街道和联社区锦华发工业园3栋硅谷大院T1栋611</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-900/50 rounded-2xl p-8 border border-gray-800">
+                        <h3 class="text-xl font-bold mb-4">工作时间</h3>
+                        <ul class="space-y-3">
+                            <li class="flex justify-between">
+                                <span class="text-gray-300">周一至周五</span>
+                                <span class="text-gray-400">9:00 - 22:00</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span class="text-gray-300">周六至周日</span>
+                                <span class="text-gray-400">10:00 - 23:00</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span class="text-gray-300">法定节假日</span>
+                                <span class="text-gray-400">10:00 - 23:00</span>
+                            </li>
+                        </ul>
+                        <p class="text-gray-400 mt-4">24小时在线客服系统，随时为您解答疑问</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark pt-16 pb-8 border-t border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
+                <div>
+                    <a href="#" class="flex items-center space-x-2 mb-6">
+                        <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
+                            <i class="fa fa-play-circle text-white text-xl"></i>
+                        </div>
+                        <span class="text-2xl font-bold text-white">抖音运营</span>
+                    </a>
+                    <p class="text-gray-400 mb-6">专业的抖音代运营服务提供商，助力品牌在短视频时代实现快速增长。</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-primary flex items-center justify-center transition-colors">
+                            <i class="fa fa-weibo text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-primary flex items-center justify-center transition-colors">
+                            <i class="fa fa-weixin text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-primary flex items-center justify-center transition-colors">
+                            <i class="fa fa-qq text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-primary flex items-center justify-center transition-colors">
+                            <i class="fa fa-douyin text-white"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">服务项目</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">内容策划</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">视频制作</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">账号运营</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">推广引流</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">电商变现</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">数据分析</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">关于我们</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">公司简介</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">团队介绍</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">成功案例</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">合作伙伴</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">新闻动态</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">联系我们</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">联系方式</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fa fa-phone text-primary mt-1 mr-3"></i>
+                            <span class="text-gray-400">400-123-4567</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-envelope text-primary mt-1 mr-3"></i>
+                            <span class="text-gray-400">servie@douyin运营.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-weixin text-primary mt-1 mr-3"></i>
+                            <span class="text-gray-400">dy77372</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-map-marker text-primary mt-1 mr-3"></i>
+                            <span class="text-gray-400">深圳市龙华区龙华街道和联社区锦华发工业园3栋硅谷大院T1栋611</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-500 text-sm mb-4 md:mb-0">© 2025 燃火投流-代运营有限公司 版权所有</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-500 hover:text-gray-300 text-sm">隐私政策</a>
+                        <a href="#" class="text-gray-500 hover:text-gray-300 text-sm">服务条款</a>
+                        <a href="#" class="text-gray-500 hover:text-gray-300 text-sm">网站地图</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center shadow-lg shadow-primary/20 opacity-0 invisible transition-all z-50">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // 导航栏滚动效果
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-dark/90', 'bg-blur', 'shadow-lg');
+            } else {
+                navbar.classList.remove('bg-dark/90', 'bg-blur', 'shadow-lg');
+            }
+        });
+        
+        // 移动端菜单切换
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = menuToggle.querySelector('i');
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.replace('fa-bars', 'fa-times');
+            } else {
+                icon.classList.replace('fa-times', 'fa-bars');
+            }
+        });
+        
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                // 关闭移动菜单
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                    const icon = menuToggle.querySelector('i');
+                    icon.classList.replace('fa-times', 'fa-bars');
+                }
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // 回到顶部按钮
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.add('opacity-0', 'invisible');
+                backToTopButton.classList.remove('opacity-100', 'visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // 数字计数器动画
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200;
+        
+        const animateCounters = () => {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const increment = target / speed;
+                
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(animateCounters, 1);
+                } else {
+                    counter.innerText = target;
+                }
+            });
+        };
+        
+        // 监听元素是否进入视口
+        const observerOptions = {
+            threshold: 0.5
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        if (counters.length > 0) {
+            observer.observe(counters[0].parentElement.parentElement.parentElement);
+        }
+        
+        // 粉丝增长图表
+        const followersCtx = document.getElementById('followersChart').getContext('2d');
+        const followersChart = new Chart(followersCtx, {
+            type: 'line',
+            data: {
+                labels: ['1月', '2月', '3月', '4月', '5月', '6月'],
+                datasets: [{
+                    label: '粉丝数量(万)',
+                    data: [5, 12, 20, 28, 38, 50],
+                    backgroundColor: 'rgba(254, 44, 85, 0.1)',
+                    borderColor: 'rgba(254, 44, 85, 1)',
+                    borderWidth: 2,
+                    tension: 0.4,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.1)'
+                        },
+                        ticks: {
+                            color: 'rgba(255, 255, 255, 0.7)'
+                        }
+                    },
+                    x: {
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.1)'
+                        },
+                        ticks: {
+                            color: 'rgba(255, 255, 255, 0.7)'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: 'rgba(255, 255, 255, 0.7)'
+                        }
+                    }
+                }
+            }
+        });
+        
+        // 互动数据图表
+        const engagementCtx = document.getElementById('engagementChart').getContext('2d');
+        const engagementChart = new Chart(engagementCtx, {
+            type: 'bar',
+            data: {
+                labels: ['点赞', '评论', '分享', '收藏'],
+                datasets: [{
+                    label: '运营前',
+                    data: [2000, 300, 150, 500],
+                    backgroundColor: 'rgba(100, 100, 100, 0.6)',
+                }, {
+                    label: '运营后',
+                    data: [15000, 3200, 2800, 4500],
+                    backgroundColor: 'rgba(254, 44, 85, 0.8)',
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.1)'
+                        },
+                        ticks: {
+                            color: 'rgba(255, 255, 255, 0.7)'
+                        }
+                    },
+                    x: {
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.1)'
+                        },
+                        ticks: {
+                            color: 'rgba(255, 255, 255, 0.7)'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: 'rgba(255, 255, 255, 0.7)'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>樱花飘落效果</title>
+    <style>
+        /* 花瓣基础样式 */
+        .petal {
+            position: fixed;
+            pointer-events: none;
+            background-size: contain;
+            background-repeat: no-repeat;
+            z-index: 9999;
+            opacity: 0.7;
+        }
+        
+        /* 不同类型的樱花样式 */
+        .petal-type1 {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path fill="%23ffb7c5" d="M12,2C9,7,4,9,4,14c0,5,6,8,8,8s8-3,8-8C20,9,15,7,12,2z"/></svg>');
+        }
+        
+        .petal-type2 {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path fill="%23ff9eb5" d="M12,3C8,8,3,10,3,15c0,4,5,7,9,7s9-3,9-7C21,10,16,8,12,3z"/></svg>');
+        }
+    </style>
+</head>
+<body>
+    <!-- 你的网站内容放在这里 -->
+    <script>
+        // ====== 樱花生成核心代码 ======
+        document.addEventListener('DOMContentLoaded',  () => {
+            const petalContainer = document.createElement('div'); 
+            document.body.appendChild(petalContainer); 
+            
+            // 创建花瓣 
+            function createPetal() {
+                const petal = document.createElement('div'); 
+                petal.className  = `petal petal-type${Math.floor(Math.random()  * 2) + 1}`;
+                
+                // 随机属性设置 
+                const size = 15 + Math.random()  * 25;
+                petal.style.width  = `${size}px`;
+                petal.style.height  = `${size}px`;
+                petal.style.left  = `${Math.random()  * window.innerWidth}px`; 
+                petal.style.top  = `-${size}px`;
+                petal.style.opacity  = 0.3 + Math.random()  * 0.7;
+                petal.style.transform  = `rotate(${Math.random()  * 360}deg)`;
+                
+                // 动画参数
+                const duration = 10 + Math.random()  * 20;
+                const sway = 50 + Math.random()  * 100;
+                const swayDirection = Math.random()  > 0.5 ? 1 : -1;
+                
+                // 应用动画 
+                petal.animate([ 
+                    { 
+                        transform: `translate(0, 0) rotate(0deg)`,
+                        opacity: petal.style.opacity 
+                    },
+                    { 
+                        transform: `translate(${sway * swayDirection}px, ${window.innerHeight}px)  rotate(360deg)`,
+                        opacity: 0 
+                    }
+                ], {
+                    duration: duration * 1000,
+                    easing: 'cubic-bezier(0.4, 0, 0.2, 1)'
+                });
+                
+                petalContainer.appendChild(petal); 
+                
+                // 动画结束后移除元素 
+                setTimeout(() => petal.remove(),  duration * 1000);
+            }
+            
+            // 控制花瓣生成频率（每秒2-5片）
+            setInterval(createPetal, 300);
+        });
+    </script>
+</body>
+</html>

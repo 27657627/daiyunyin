@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>全媒体投流专区</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<script src="assets/js/tailwindcss.js"></script>
+<style>
+html, body { overflow-x: hidden; overscroll-behavior-x: none;}
+body { overscroll-behavior-x:none; }
+img { max-width: 100%;height:auto;}
+* { box-sizing: border-box; }
+@keyframes fadeInUp { 0%{opacity:0;transform:translateY(50px) scale(.94);} 100%{opacity:1;transform:none;} }
+@keyframes fadeInLeft { 0% { opacity:0; transform:translateX(-90px) scale(.96);} 100%{opacity:1; transform:none;} }
+@keyframes fadeInRight { 0% { opacity:0; transform:translateX(90px) scale(.96);} 100%{opacity:1; transform:none;} }
+@keyframes popBounce { 0%{transform:scale(.6);opacity:0;}60%{transform:scale(1.08);}80%{transform:scale(.96);}100%{transform:scale(1);opacity:1;}}
+@keyframes shakeX {15%,45%,75% {transform:translateX(-4px);}30%,60%,90%{transform:translateX(5px);}0%,100%{transform:none;}}
+/* 波纹 */
+.ripple { position: relative; overflow: hidden !important;}
+.ripple:active::after { content:'';position:absolute;left:50%;top:50%;width:0;height:0;
+  background:rgba(255,255,255,0.37); border-radius:999px; transform:translate(-50%,-50%);
+  animation:rippleEffect .47s linear; pointer-events:none; z-index:10;}
+@keyframes rippleEffect { 0%{width:0;height:0;} 90%{width:94px;height:94px;} 100%{width:94px;height:94px;opacity:0;}}
+.animate-fadein-up { animation:fadeInUp .7s cubic-bezier(.5,-0.05,.33,1.1) both; }
+.animate-pop { animation:popBounce .8s cubic-bezier(.53,-0.19,.56,1.18) both;}
+.animate-shake { animation:shakeX .33s linear; }
+.animate-left { animation:fadeInLeft .9s cubic-bezier(.67,-0.14,.43,1.22) both; }
+.animate-right { animation:fadeInRight .9s cubic-bezier(.67,-0.14,.43,1.22) both; }
+</style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-blue-100 via-pink-50 to-yellow-100 flex flex-col">
+<main class="flex-1 flex justify-center">
+  <div class="w-full max-w-2xl mx-auto px-3 pt-16 pb-16 flex flex-col">
+    <div class="mb-14 mt-3 text-center animate-fadein-up">
+      <div class="font-bold text-4xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-pink-500 to-yellow-500 drop-shadow">
+         全媒体投流套餐
+      </div>
+      <div class="connect"><a href="1index.html" target="_blank">首页</a></div>
+      <div class="connect"><a href="dy.index.html" target="_blank">抖音代运营</a></div>
+      <div class="connect"><a href="sph.index.html" target="_blank">视频号代运营</a></div>
+      <div class="connect"><a href="ks.index.html" target="_blank">快手代运营</a></div>
+      <div class="connect"><a href="xhs.index.html" target="_blank">小红书代运营</a></div>
+      <div class="connect"><a href="wb.index.html" target="_blank">微博代运营</a></div>
+
+      <div class="mt-4 text-base text-gray-600"><span class="text-blue-500 font-semibold"> 6年实操投流经验✅高效🚀快速👨‍💻安全稳定🤝诚信合作</span></div>
+    </div>
+    <div class="flex flex-col gap-10 items-center mb-14">
+      <div class="w-full max-w-2xl p-6 rounded-3xl bg-white/90 shadow-lg animate-left transition hover:scale-[1.025] hover:shadow-2xl group">
+        <div class="flex items-center gap-2 mb-2 text-[1.19rem] font-extrabold text-blue-700">
+          <img src="assets/svg/dy.svg" alt="快手" class="w-6 h-6 inline-block mr-1 align-middle" />
+          抖音
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+          ✅ 粉丝：
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+          ✅ 点赞：3000~5000
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+          ✅️ 转发：1000~2000
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+          ✅ 浏览：50000~1000000
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+          ✅ 评论：100~200
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+          ✅️ 收藏：500~1000
+        </div>
+      </div>
+    <div class="flex flex-col gap-10 items-center mb-14">
+      <div class="w-full max-w-2xl p-6 rounded-3xl bg-white/90 shadow-lg animate-left transition hover:scale-[1.025] hover:shadow-2xl group">
+        <div class="flex items-center gap-2 mb-2 text-[1.19rem] font-extrabold text-blue-700">
+          <img src="assets/svg/sph.svg" alt="快手" class="w-6 h-6 inline-block mr-1 align-middle" />
+          视频号
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+          ✅ 粉丝：500~1000
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+          ✅ 点赞：1000~2000
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+          ✅️ 转发：500~1000
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+          ✅ 浏览：30000~50000
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+          ✅ 评论：50~150
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+          ✅️ 收藏：300~500
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+          ✅  温馨提示：如果您只需要增加粉丝，点赞或者浏览量。也可以联系我们客服进行投流
+        </div>
+        </div>
+      </div>
+    <div class="flex flex-col gap-10 items-center mb-14">
+      <div class="w-full max-w-2xl p-6 rounded-3xl bg-white/90 shadow-lg animate-left transition hover:scale-[1.025] hover:shadow-2xl group">
+        <div class="flex items-center gap-2 mb-2 text-[1.19rem] font-extrabold text-blue-700">
+          <img src="assets/svg/kuaishou.svg" alt="快手" class="w-6 h-6 inline-block mr-1 align-middle" />
+          快手
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+          ✅ 粉丝：12元1百粉丨35元5百粉丨60元1千粉丨300元5千粉丨500元1万粉
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+          ✅ 点赞：5元1百赞丨20元5百赞丨35元1千赞丨60元2千赞
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+          ✅️ 转发：2元1百丨5元4百丨10元1千丨20元2千2百
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+          ✅ 浏览：3元1万丨5元2万丨23万10万
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+          ✅️ 收藏：5元1百收藏丨20元5百收藏丨35元1千收藏 
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+          ✅ 评论：10元10条丨以此类推
+        </div>
+      </div>
+    <div class="flex flex-col gap-10 items-center mb-14">
+      <div class="w-full max-w-2xl p-6 rounded-3xl bg-white/90 shadow-lg animate-left transition hover:scale-[1.025] hover:shadow-2xl group">
+        <div class="flex items-center gap-2 mb-2 text-[1.19rem] font-extrabold text-blue-700">
+          <img src="assets/svg/xhs.svg" alt="快手" class="w-6 h-6 inline-block mr-1 align-middle" />
+          小红书
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+          ✅ 粉丝：500~1000
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+          ✅ 点赞：1000~2000
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+          ✅️ 转发：500~1000
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+          ✅ 浏览：30000~50000
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+          ✅ 评论：50~150
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+          ✅️ 收藏：300~500
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+          ✅  温馨提示：如果您只需要增加粉丝，点赞或者浏览量。也可以联系我们客服进行投流
+        </div>
+        </div>
+    <div class="flex flex-col gap-10 items-center mb-14">
+      <div class="w-full max-w-2xl p-6 rounded-3xl bg-white/90 shadow-lg animate-left transition hover:scale-[1.025] hover:shadow-2xl group">
+        <div class="flex items-center gap-2 mb-2 text-[1.19rem] font-extrabold text-blue-700">
+          <img src="assets/svg/wb.svg" alt="快手" class="w-6 h-6 inline-block mr-1 align-middle" />
+          微博
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+        ✅ 粉丝：0~100
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+        ✅ 点赞：100~200
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+        ✅ 转发：10~100
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+        ✅ 浏览：1000~5000
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+        ✅ 评论：0~10
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+        ✅ 收藏：10~100
+        </div>
+        <div class="pl-3 text-base text-gray-600 leading-relaxed font-medium">
+        ✅ 温馨提示：如果您只需要增加粉丝，点赞或者浏览量。也可以联系我们客服进行投流
+        </div>
+        </div>
+
+    <div class="my-10 flex flex-col items-center animate-fadein-up">
+      <div class="mb-6 text-lg md:text-xl font-bold text-orange-600 flex items-center gap-1 tracking-wider ">
+        👑 联系客服
+      </div>
+      <div class="flex flex-col sm:flex-row gap-7 w-full max-w-2xl justify-center relative select-none">
+        <div class="flex-1 flex items-center justify-center p-4 sm:p-5 bg-gradient-to-tr from-blue-50 via-white to-blue-100 rounded-2xl shadow-md hover:scale-[1.03] hover:shadow-lg active:scale-95 group transition animate-left">
+         <img src="assets/svg/qq.svg" alt="QQ" class="w-5 h-5 ml-2 inline-block align-middle" />
+          <span class="font-semibold text-blue-700 ml-2 text-base md:text-lg">QQ</span>
+          <span id="qq1"
+            class="inline-flex font-mono text-[1.05rem] md:text-lg font-bold text-blue-900 
+            bg-blue-100/80 px-2 py-[2px] mx-3 rounded-md select-all border border-transparent group-hover:border-blue-400 group-hover:animate-shake transition"
+            style="line-height:1.7;"
+          >99516402</span>
+          <button onclick="copyContact('qq1','QQ号')"
+            class="relative px-2 py-0.5 md:px-2.5 md:py-1 rounded ripple bg-blue-500/90 hover:bg-pink-400 hover:text-yellow-50 text-white font-bold text-[0.94rem] md:text-base shadow-sm transition hover:scale-105 outline-none border border-white/50 align-middle"
+            style="height:auto;min-width:43px;line-height:1.7;vertical-align:middle;display:inline-flex;align-items:center;justify-content:center"
+          >复制</button>
+        </div>
+        <div class="flex-1 flex items-center justify-center p-4 sm:p-5 bg-gradient-to-tr from-yellow-50 via-white to-pink-100 rounded-2xl shadow-md hover:scale-[1.03] hover:shadow-lg active:scale-95 group transition animate-right delay-100">
+          <img src="assets/svg/weixin.svg" alt="dd" class="w-5 h-5 ml-2 inline-block align-middle" />
+          <span class="font-semibold text-yellow-700 ml-2 text-base md:text-lg">微信</span>
+          <span id="dd1"
+            class="inline-flex font-mono text-[1.05rem] md:text-lg font-bold text-yellow-900
+            bg-yellow-100/80 px-2 py-[2px] mx-3 rounded-md select-all border border-transparent group-hover:border-yellow-300 group-hover:animate-shake transition"
+            style="line-height:1.7;"
+          >dy77372</span>
+          <button onclick="copyContact('dd1','微信号')"
+            class="relative px-2 py-0.5 md:px-2.5 md:py-1 rounded ripple bg-yellow-400/90 hover:bg-pink-400 hover:text-blue-900 text-white font-bold text-[0.94rem] md:text-base shadow-sm transition hover:scale-105 outline-none border border-white/50 align-middle"
+            style="height:auto;min-width:43px;line-height:1.7;vertical-align:middle;display:inline-flex;align-items:center;justify-content:center"
+          >复制</button>
+        </div>
+      </div>
+    </div>
+       <div class="connect"><a href="2index.html" target="_blank">😆关于我们</a></div>
+  </div>
+</main>
+<div id="tipsToast"
+  class="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 px-8 py-4 rounded-2xl bg-blue-600/95 font-extrabold text-white text-lg shadow-lg pointer-events-none opacity-0 transition duration-300"
+></div>
+<script>
+function copyContact(id, type){
+  let el=document.getElementById(id),val=el?el.innerText.trim():'';
+  el?.classList.remove('animate-shake'); void el?.offsetWidth; el?.classList.add('animate-shake');
+  if(val){
+    if(window.navigator.clipboard){
+      window.navigator.clipboard.writeText(val)
+          .then(()=>showToast(type+'已复制: '+val));
+    }else{
+      let ta=document.createElement('textarea');
+      ta.value=val;document.body.appendChild(ta);ta.select();
+      try{document.execCommand('copy');showToast(type+'已复制: '+val);}catch(e){}
+      document.body.removeChild(ta);
+    }
+  }
+}
+function showToast(msg){
+  let t=document.getElementById("tipsToast");
+  if(!t) return;
+  t.innerText=msg;
+  t.classList.remove("opacity-0","pointer-events-none");
+  t.classList.add("opacity-100");
+  setTimeout(()=>{ t.classList.remove("opacity-100");t.classList.add("opacity-0","pointer-events-none");},1400)
+}
+</script>
+<script charset="UTF-8" id="LA_COLLECT" src="https://sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"KlqcaNFguU8VJuCM",ck:"KlqcaNFguU8VJuCM"})</script>
+</body>
+</html>
